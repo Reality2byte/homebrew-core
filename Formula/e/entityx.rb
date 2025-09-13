@@ -8,6 +8,7 @@ class Entityx < Formula
   no_autobump! because: :requires_manual_review
 
   bottle do
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:    "83a257bcf2bbc1ca76e5148faf1a87945d4e987c575c12d3e6417cce65642a1c"
     sha256 cellar: :any_skip_relocation, arm64_sequoia:  "e9581dc9272c4aea13b72c38984aa2697cd705083fe55fc96a3b313402428cc3"
     sha256 cellar: :any_skip_relocation, arm64_sonoma:   "fd01d453db532186781c5808a3a6f2f7e5c3ea91e83d3c7726426f196c8a66df"
     sha256 cellar: :any_skip_relocation, arm64_ventura:  "7573dbd39afa2fca718f2a0ce4167331d3662f6a287edaba5d5ba1f5158cfae0"

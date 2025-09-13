@@ -16,6 +16,7 @@ class BbftpClient < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:    "3dbb17d63dccd104bc819c729ee8715c4a67e5d704e7101ce7a5465ef85bc916"
     sha256 cellar: :any_skip_relocation, arm64_sequoia:  "f705530c05b923cc4de503817876fc96cf776f351aae554a64b144aef23c729a"
     sha256 cellar: :any_skip_relocation, arm64_sonoma:   "00799fab3efd0fd9c823854c0113ec44d2c4d13d7c191d79165e0ddc75ec71e0"
     sha256 cellar: :any_skip_relocation, arm64_ventura:  "2f99da3815fbef62edb3391bdf9dab41055ed1ace3f0b30cd69c45e719be6149"

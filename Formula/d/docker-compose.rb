@@ -29,6 +29,7 @@ class DockerCompose < Formula
   conflicts_with cask: "docker-desktop"
 
   def install
+    ENV["CGO_ENABLED"] = OS.mac? ? "1" : "0"
     ldflags = %W[
       -s -w
       -X github.com/docker/compose/v2/internal.Version=#{version}

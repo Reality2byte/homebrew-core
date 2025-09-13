@@ -12,6 +12,7 @@ class Aqua < Formula
   end
 
   bottle do
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "81a15b61a0e1d8c60a74a746a1932fb89a9da3342cff69b325c8c59c56329938"
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "81a15b61a0e1d8c60a74a746a1932fb89a9da3342cff69b325c8c59c56329938"
     sha256 cellar: :any_skip_relocation, arm64_sonoma:  "81a15b61a0e1d8c60a74a746a1932fb89a9da3342cff69b325c8c59c56329938"
     sha256 cellar: :any_skip_relocation, sonoma:        "6e94fbed07654a167fb6e1f1b39bc63113087e84ec16f25b5a2ce4407e57040c"

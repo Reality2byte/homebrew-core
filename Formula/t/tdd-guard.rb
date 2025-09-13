@@ -6,6 +6,7 @@ class TddGuard < Formula
   license "MIT"
 
   bottle do
+    sha256 cellar: :any,                 arm64_tahoe:   "0d88a3b0988f2116ca5beb77357df73e8bb6da8fd854cbb2b7c74c25e86004be"
     sha256 cellar: :any,                 arm64_sequoia: "5e21739c97c607ae32e3d59176456392466607369e191cea965df9ad546e74a4"
     sha256 cellar: :any,                 arm64_sonoma:  "5e21739c97c607ae32e3d59176456392466607369e191cea965df9ad546e74a4"
     sha256 cellar: :any,                 sonoma:        "07a558015fc8f7c65e3c9977cbcadf240032ed0172f41d9d92a16b71edc7b51b"

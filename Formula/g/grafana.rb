@@ -21,6 +21,7 @@ class Grafana < Formula
   end
 
   bottle do
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "b49b84b062b638291eaada0c0775af8a70c9b520b00a97d7b4e6daef3b8518e2"
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "a6639b084a92df9ee36e004f42f4e6b9408e987bfd16bea116c3065c6c3e27a9"
     sha256 cellar: :any_skip_relocation, arm64_sonoma:  "308c3471f361ba71cd9b2045f57e403187047d0b559d87d0c8e2fe2db3b96757"
     sha256 cellar: :any_skip_relocation, arm64_ventura: "0c241cdd832abfdbd10e8f6d8b470248734a2c995fe3a1bb999bbd045c6a0215"

@@ -8,6 +8,7 @@ class Enkits < Formula
   no_autobump! because: :requires_manual_review
 
   bottle do
+    sha256 cellar: :any,                 arm64_tahoe:    "994e77e132e38c13f2fc03c20f2e8d27b0cdce0ce9e46becec51ae93d079a05a"
     sha256 cellar: :any,                 arm64_sequoia:  "fb8f0de48f38276feca170ec6d67751843fb86cd993ed8d0009e7a93cfe4d078"
     sha256 cellar: :any,                 arm64_sonoma:   "6103b95cf96db9cb41120c8f73de2e7f4bac475249dd0cb6d97e1376620006e3"
     sha256 cellar: :any,                 arm64_ventura:  "3c5711ce533d47c9a34560e89fb023a33a55d795e73c9f1ecab5d1a6a759e656"

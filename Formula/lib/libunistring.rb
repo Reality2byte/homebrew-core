@@ -23,10 +23,11 @@ class Libunistring < Formula
     # This is also why we skip `make check`.
     # https://github.com/coreutils/gnulib/commit/bab130878fe57086921fa7024d328341758ed453
     # https://savannah.gnu.org/bugs/?65686
-    ENV["am_cv_func_iconv_works"] = "yes" if OS.mac? && [:sequoia, :tahoe].include?(MacOS.version)
+    use_iconv_workaround = OS.mac? && MacOS.version >= :sonoma
+    ENV["am_cv_func_iconv_works"] = "yes" if use_iconv_workaround
     system "./configure", "--disable-silent-rules", *std_configure_args
     system "make"
-    system "make", "check" if !OS.mac? || MacOS.version < :sonoma || MacOS.version > :tahoe
+    system "make", "check" unless use_iconv_workaround
     system "make", "install"
   end
 

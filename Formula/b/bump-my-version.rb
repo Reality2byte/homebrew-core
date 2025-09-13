@@ -9,6 +9,7 @@ class BumpMyVersion < Formula
   head "https://github.com/callowayproject/bump-my-version.git", branch: "master"
 
   bottle do
+    sha256 cellar: :any,                 arm64_tahoe:   "d827d4b2cf214dd477b609e9d04c832699cdbd67d2bf3527d5c7792ccefd185a"
     sha256 cellar: :any,                 arm64_sequoia: "7034b40ced511d600ab9a2e980aa2003ef7daa55228977e2ec3a99fed4a5c3e1"
     sha256 cellar: :any,                 arm64_sonoma:  "19a13212c245979d74527ebb9e69559b1caf59f9033dd4ad3ca13ea1d6855940"
     sha256 cellar: :any,                 sonoma:        "81c5bed7a6f4fbb179bde510351b62645960ad03efebf4eabdd7c55d434f745b"
